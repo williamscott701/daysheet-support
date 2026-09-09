@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daysheet Support</title>
+<meta name="description" content="Help, contact and answers for Daysheet, the daily report sheet for nannies, childminders and home daycares.">
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#F4F5F7;
+    --surface:#FFFFFF;
+    --ink:#16181D;
+    --ink-soft:#565E70;
+    --accent:#215247;
+    --rule:#E1E4EA;
+    --amber:#8A6412;
+    --callout-bg:#F3EDE9;
+    --mono-bg:#EAECF1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0F1218;
+      --surface:#171B23;
+      --ink:#E8EAEF;
+      --ink-soft:#9BA3B5;
+      --accent:#8DC0B2;
+      --rule:#262C38;
+      --amber:#D6AC55;
+      --callout-bg:#211A16;
+      --mono-bg:#1C212B;
+    }
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    max-width:40em;
+    margin:0 auto;
+    padding:2.75rem 1.5rem 6rem;
+  }
+  h1{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.9rem;
+    line-height:1.25;
+    margin:0 0 .35rem;
+  }
+  h2{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.3rem;
+    margin:2.4rem 0 .9rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    scroll-margin-top:1rem;
+  }
+  h3{ font-size:1.05rem; margin:1.6rem 0 .6rem; }
+  p, li{ font-size:1rem; color:var(--ink); }
+  p{ margin:0 0 1rem; }
+  .meta{ color:var(--ink-soft); font-size:.95rem; margin:0 0 2.25rem; }
+  .lede{ color:var(--ink-soft); font-size:1.08rem; }
+  a{ color:var(--accent); }
+  ul, ol{ padding-left:1.3rem; margin:0 0 1rem; }
+  li{ margin-bottom:.5rem; }
+  code{
+    background:var(--mono-bg);
+    border-radius:5px;
+    padding:.1rem .35rem;
+    font-size:.9em;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  .callout{
+    background:var(--callout-bg);
+    border-left:4px solid var(--amber);
+    border-radius:10px;
+    padding:1.2rem 1.4rem .2rem;
+    margin:1.75rem 0;
+  }
+  .callout h2, .callout h3{ margin-top:0; border-top:none; padding-top:0; }
+  .toc{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:12px;
+    padding:1.1rem 1.4rem;
+    margin:2.25rem 0;
+  }
+  .toc p{
+    margin:0 0 .6rem;
+    font-weight:600;
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--ink-soft);
+  }
+  .toc ol{ margin:0; padding-left:1.2rem; }
+  .toc li{ margin-bottom:.4rem; font-size:.95rem; }
+  .toc a{ text-decoration:none; }
+  .toc a:hover{ text-decoration:underline; }
+  .pagenav{
+    margin:0 0 2rem;
+    font-size:.95rem;
+    color:var(--ink-soft);
+  }
+  .pagenav a, .pagenav strong{ margin-right:1rem; }
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    color:var(--ink-soft);
+    font-size:.9rem;
+  }
+  strong{ color:var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <p class="pagenav"><strong>Support</strong> <a href="privacy.html">Privacy</a> <a href="terms.html">Terms</a></p>
+
+  <h1>Daysheet</h1>
+  <p class="lede">Four good sheets by five o'clock.</p>
+
+  <h2 id="contact">Getting help</h2>
+  <p>Email <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a>. One person reads it, and replies are usually
+  within a couple of days. Telling me your iPhone model and iOS version saves a round trip.</p>
+
+  <div class="callout">
+    <p><strong>Daysheet is a record-keeping tool, not a compliance guarantee.</strong> It works out
+    staff-to-child ratios and group sizes from published rules and from the dates of birth you
+    enter. <strong>Your licensing authority is the authority</strong> — state rules are amended, and
+    your own licence may carry conditions stricter than the published rule. Where they differ, your
+    licence wins, and you should enter its numbers under <em>Your own limits</em>. I cannot tell you
+    what your licence requires, and please do not email me to ask: a wrong answer from a stranger
+    could cost you your registration.</p>
+  </div>
+
+  <h2 id="faq">Common questions</h2>
+
+  <h3>Who is this for?</h3>
+  <p>The one-person operation. A nanny with three children, a childminder with six, a small home
+  daycare. The existing software — Procare, brightwheel, Lillio — is centre-management for
+  facilities with fifty children and is priced per seat. Nobody was serving the person who just
+  needs to send four good sheets before going home, which is what Daysheet does.</p>
+
+  <h3>Do parents need an app?</h3>
+  <p>No, and that is the point. There is no parent app, no invitation to accept, no account for
+  anyone to make. Daysheet turns the day into a PDF and hands it to the iOS share sheet — you send
+  it however you already talk to that family, whether that is a message, an email or a printout at
+  the door.</p>
+
+  <h3>Where do the ratios come from?</h3>
+  <p>Each state's own published licensing rule for child care centres, read directly and cited in
+  the app so you can look it up. Tap <strong>Ratio rules</strong> to see the agency and the
+  regulation behind whatever table you have selected. The default is the national guidance in
+  <em>Caring for Our Children</em>, 4th edition, which is stricter than almost every state minimum
+  — so an operator who has not yet chosen is never shown a number laxer than their licence allows.</p>
+
+  <h3>Why isn't my state in the list?</h3>
+  <p>Because I could not read its published table well enough to ship it. Virginia's group-size
+  table could not be retrieved in full for three- and four-year-olds, and Wisconsin's rule was
+  unreachable. Guessing would have been worse than leaving them out. Use <strong>Your own
+  limits</strong> and type in what your licence says — that is the right answer for anyone whose
+  licence differs from the published rule, in any state.</p>
+
+  <h3>The ratio table for my state doesn't match my licence.</h3>
+  <p>Then your licence is right and the table is not the rule for you. Home-based settings are
+  licensed under a different part of the code than centres in every state, quality-rated licences
+  are often stricter, and individual conditions are common. Enter your own numbers.</p>
+
+  <h3>Does Daysheet apply nap-time ratio relaxations?</h3>
+  <p>No, deliberately. Many states relax ratios while children are sleeping, under conditions that
+  vary enormously — how many are actually asleep, whether an adult is in the room, whether there
+  are infants in the group, how long it may last. Daysheet reports the ratio for the children who
+  are present. Applying a relaxation the app cannot verify would be the wrong kind of confident.</p>
+
+  <h3>How does a child move up a ratio band?</h3>
+  <p>By having a birthday. The band is worked out from the date of birth every time, so a child
+  who turns two overnight is counted under the two-year-old ratio the next morning with no action
+  from you. A child born on 29 February moves up on 1 March — the conservative reading, which keeps
+  them in the more staff-intensive band a day longer.</p>
+
+  <h3>What does the sleep figure mean?</h3>
+  <p>The nap total for the day, shown against what is typical for that age. The age norms come from
+  the National Sleep Foundation's published recommendations (Hirshkowitz et al., <em>Sleep
+  Health</em>, 2015), which are figures per twenty-four hours and therefore include the night. A
+  childcare setting sees the daytime only, so the app says that under every nap total. It is
+  context for a parent, never an assessment of a child.</p>
+
+  <h3>What makes an incident record "complete"?</h3>
+  <p>Daysheet checks each record against the field list in <em>Caring for Our Children</em>, 4th
+  edition, Standard 9.4.1.9 — the child, the time, the exact place, what they were doing, what
+  happened, the part of the body, any equipment involved, what you did, who you told and when, and
+  who wrote it. It tells you what is missing while you can still remember the answer, because the
+  moment a record matters is the only moment you cannot fix it. Your licensing authority decides
+  what you must actually keep; this is a completeness check against a published standard, not a
+  legal test.</p>
+
+  <h3>Can Daysheet tell me whether to give a medicine?</h3>
+  <p>No. It records that you gave one — the medication, the dose, the time, who gave it, and which
+  written parental authorisation it was covered by. If what you type matches an allergy or medical
+  flag on that child's record, it stops and shows you the flag. That is a safety net, not advice.</p>
+
+  <h3>What happens if a child has an allergy?</h3>
+  <p>Flags appear at the top of the meal screen for the right child, loudly. A flag marked
+  <strong>anaphylaxis</strong> will not let you save a meal until you confirm you have read it.
+  That friction is deliberate and it is the only place in the app where friction is the right
+  answer.</p>
+
+  <h3>Where do photos go?</h3>
+  <p>Into Daysheet's own storage on your iPhone, and nowhere else. The app makes no network
+  requests at all, so there is nowhere for them to go. The only way a photograph leaves the device
+  is on a sheet you share yourself.</p>
+
+  <h3>What is free, and what is Pro?</h3>
+  <p>Free tracks two children and shows today's sheet on screen, which is genuinely useful — it is
+  what you read out at the door. Pro adds unlimited children, the sheet as a PDF you can send,
+  week and month summaries, ratio and group-size checks, incident and medication records, the
+  attendance and billing export, and photo attachments.</p>
+
+  <h3>How do I cancel?</h3>
+  <p>Subscriptions are managed by Apple, not by this app: open the Settings app, tap your name,
+  then <strong>Subscriptions</strong>. Cancelling stops the next renewal and you keep Pro until the
+  period you have paid for ends.</p>
+
+  <h3>A child left and I need their records.</h3>
+  <p>Archive rather than delete. Archiving takes them off the register and keeps every sheet,
+  attendance record, incident and medication log — which is exactly what gets asked for after a
+  child has left. Deleting is permanent and is offered separately for that reason.</p>
+
+  <h3>The widget is not updating.</h3>
+  <p>Remove it and add it again. If it still shows nothing, open the app once — the widget reads a
+  file the app writes, and there is nothing to read until the app has run after installing. The
+  ratio widget is blank without Pro by design: the figure is never written to the file a free build
+  can read.</p>
+
+  <h2 id="privacy">Privacy in one line</h2>
+  <p>Daysheet collects nothing, sends nothing and has no account. The
+  <a href="privacy.html">full policy</a> says so at length, and it matters more here than in most
+  apps — this is somebody else's children's data.</p>
+
+  <footer>
+    <p>Daysheet &middot; William Scott<br>
+    <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
